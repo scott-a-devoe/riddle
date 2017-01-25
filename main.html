@@ -7,30 +7,64 @@
         <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
         <script type="application/ld+json">
-          {
-            "@context": "http://schema.org",
-            "@type": "NewsArticle",
-            "headline": "Open-source framework for publishing content",
-            "datePublished": "2015-10-07T12:02:41Z",
-            "image": [
-              "logo.jpg"
-            ]
-          }
+            {
+              "@context": "http://schema.org",
+              "@type": "NewsArticle",
+              "headline": "Open-source framework for publishing content",
+              "datePublished": "2015-10-07T12:02:41Z",
+              "image": [
+                "logo.jpg"
+              ]
+            }
         </script>
-        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
         <style amp-custom>
-          /* any custom style goes here */
-          body {
-            background-color: white;
-          }
-          amp-img {
-            background-color: gray;
-            border: 1px solid black;
-          }
+            /*I like this one: http://paradoxcreates.com/*/
+            body {
+                background-color: black;
+                color: white;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:visited {
+                color: white;
+            }
+            a:active {
+                color: white;
+            }
+            amp-img {
+            }
+            #main-menu {
+                margin: 18% 35% 0 35%;
+                text-align: center;
+                font-size: 36px;
+                font-family: "colfax-web", sans-serif;
+            }
+            #main-menu > a {
+            }
+            * {
+                /*border: solid white 1px;*/
+            }
+            #enter {
+                color: black;
+                background-color: white;
+                display: block;
+                margin: 0 auto;
+                width: 100px;
+                border: solid white 1px;
+                border-radius: 10px;
+            }
+            #enter:active {
+                background-color: #bbbbbb;
+                border: solid #bbbbbb 1px;
+            }
         </style>
+
     </head>
     <body>
-        <h1>Welcome to the mobile web</h1>
-        <h2>Left off here: https://developers.google.com/web/tools/setup/... check out some of that bs perhaps</h2>
+        <div id="main-menu">
+            <a id="enter" href="">Enter</a>
+        </div>
     </body>
 </html>
