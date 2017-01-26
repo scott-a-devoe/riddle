@@ -38,22 +38,26 @@
             #main-menu {
                 margin: 18% 35% 0 35%;
                 text-align: center;
-                font-size: 36px;
+                font-size: 30px;
                 font-family: "colfax-web", sans-serif;
             }
             #main-menu > a {
-            }
-            * {
-                /*border: solid white 1px;*/
-            }
-            #enter {
                 color: black;
-                background-color: white;
                 display: block;
                 margin: 0 auto;
-                width: 100px;
+                width: 150px;
                 border: solid white 1px;
                 border-radius: 10px;
+                filter: blur(10px);
+                height: 15px;
+            }
+            #main-menu > a > div {
+                margin-top:-9px;
+            }
+            * {
+            }
+            #enter {
+                background-color: white;
             }
             #enter:active {
                 background-color: #bbbbbb;
@@ -64,7 +68,12 @@
     </head>
     <body>
         <div id="main-menu">
-            <a id="enter" href="">Enter</a>
+            <a id="enter" href=""><div>Enter</div></a>
+<!--             <a id="rules" href=""> . </a>
+            <a id="hints" href=""> . </a>
+            <a id="credits" href=""> . </a>
+            <a id="" href=""> . </a>
+            <a id="" href=""> . </a> -->
         </div>
     </body>
 </html>
