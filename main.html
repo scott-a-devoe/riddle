@@ -20,6 +20,8 @@
 
         <style amp-custom>
             /*I like this one: http://paradoxcreates.com/*/
+            * {
+            }
             body {
                 background-color: black;
                 color: white;
@@ -33,47 +35,74 @@
             a:active {
                 color: white;
             }
-            amp-img {
-            }
             #main-menu {
-                margin: 18% 35% 0 35%;
+                margin-top: 160px;
                 text-align: center;
-                font-size: 30px;
+                font-size: 20px;
                 font-family: "colfax-web", sans-serif;
             }
-            #main-menu > a {
+            .menu-button {
                 color: black;
                 display: block;
-                margin: 0 auto;
+                margin: 30px auto;
                 width: 150px;
                 border: solid white 1px;
                 border-radius: 10px;
                 filter: blur(10px);
                 height: 15px;
             }
-            #main-menu > a > div {
-                margin-top:-9px;
-            }
-            * {
+            .menu-text {
+                margin-top:-50px;
             }
             #enter {
-                background-color: white;
+                background-color: red;
             }
             #enter:active {
-                background-color: #bbbbbb;
-                border: solid #bbbbbb 1px;
+                background-color: rgba(255, 0, 0, 0.50);
+            }
+            #rename1 {
+                background-color: blue;
+            }
+            #rename1:active {
+                background-color: rgba(0, 0, 255, 0.5);
+            }
+            #rename2 {
+                background-color: yellow;
+            }
+            #rename2:active {
+                background-color: rgba(255, 255, 0, 0.5);
+            }
+            #rename3 {
+                background-color: green;
+            }
+            #rename3:active {
+                background-color: rgba(0, 128, 0, 0.5);
+            }
+            #rename4 {
+                background-color: purple;
+            }
+            #rename4:active {
+                background-color: rgba(128, 0, 128, 0.5);
+            }
+            /* hide the bottom 4 buttons while I wait to actually link them somewhere */
+            #main-menu > *:nth-child(n+3){
+                display: none;
             }
         </style>
 
     </head>
     <body>
         <div id="main-menu">
-            <a id="enter" href=""><div>Enter</div></a>
-<!--             <a id="rules" href=""> . </a>
-            <a id="hints" href=""> . </a>
-            <a id="credits" href=""> . </a>
-            <a id="" href=""> . </a>
-            <a id="" href=""> . </a> -->
+            <a id="enter" class="menu-button" href="one.html"></a>
+            <div class="menu-text">改善</div>
+            <a id="rename1" class="menu-button" href=""></a>
+            <div class="menu-text">rename1</div>
+            <a id="rename2" class="menu-button" href=""></a>
+            <div class="menu-text">rename2</div>
+            <a id="rename3" class="menu-button" href=""></a>
+            <div class="menu-text">rename3</div>
+            <a id="rename4" class="menu-button" href=""></a>
+            <div class="menu-text">rename4</div>
         </div>
     </body>
 </html>
